@@ -1,0 +1,60 @@
+body{
+background-image: url('../Sprite/Shards.jpg'); 
+background-size: cover; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; 
+}
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+h1 span {
+  background: green;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+h1:before {
+  background: green;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+}
+h1:before {
+  left: 0;
+}
+
+
+
+
+.background    { background: url('../Sprite/Space.jpg');
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: url('../Sprite/Lava.gif');}
+.wall          { background: url('../Sprite/Blocks.jpg');}
+
+.actor  { position: absolute;  }
+.coin   { background: yellow;}
+.player { background: url('../Sprite/Sprite.png');}
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.lost .player {
+  background: url('../Sprite/Crushed.png');
+}
+.won .player {
+  box-shadow: -4px -7px 8px blue, 4px -7px 8px blue;
+}
